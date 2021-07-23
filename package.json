@@ -1,0 +1,81 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-transition-group": "^4.4.1",
+    "web-vitals": "^1.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "cd postbuild && node postbuild.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "semi": "warn",
+      "no-trailing-spaces": "warn",
+      "curly": "warn",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "comma-dangle": [
+        "warn",
+        {
+          "arrays": "never",
+          "objects": "never",
+          "imports": "never",
+          "exports": "never",
+          "functions": "ignore"
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "printWidth": 165,
+    "tabWidth": 2,
+    "useTabs": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "proseWrap": "never",
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "arrowParens": "always",
+    "insertPragma": false,
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "auto",
+    "embeddedLanguageFormatting": "auto"
+  }
+}
